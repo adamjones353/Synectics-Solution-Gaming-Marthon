@@ -44,8 +44,8 @@ body {
     padding-right: 5px;
 }
 
-.donation{
-    width: 250px;
+.donation {
+    width: 450px;
 }
 
 .Green {
@@ -58,7 +58,7 @@ body {
     font-size: 1.125rem;
     line-height: 1.33333;
     display: inline-block;
-    width: 100px;
+    width: 140px;
     min-width: 48px;
     vertical-align: middle;
     cursor: pointer;
