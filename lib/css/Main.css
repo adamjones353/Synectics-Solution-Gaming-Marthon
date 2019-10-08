@@ -19,22 +19,17 @@ body {
 }
 
 
-.Channels div {
+.Channel {
     list-style-type: none;
     background-color: #76bd1d;
     padding: 5px;
     margin: 6px 1px;
     border-radius: 5px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .ActiveChannel {
     background-color: #487312 !important;
-}
-
-.Channels img {
-    width:100%;
-    height:auto;
 }
 
 .justgivingLogo {
@@ -50,6 +45,35 @@ body {
 
 .Green {
     color: #76bd1d;
+}
+
+.StreamImg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+}
+
+.StreamTitle {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    height: 50%;
+}
+
+.StreamerName {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    height: 50%;
+    line-height: 80px;
 }
 
 .jg-btn {
