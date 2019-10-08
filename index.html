@@ -12,6 +12,18 @@
     <script src="https://kit.fontawesome.com/9b2cba05b3.js" crossorigin="anonymous"></script>
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
     <script src="./lib/js/TwitchStream.js"></script>
+    
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '422242955155048',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v4.0'
+            });
+        };
+    </script>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
     <link href="./lib/css/Main.css" rel="stylesheet" />
 
 </head>
@@ -20,7 +32,7 @@
         <span class="navbar-brand mb-0 h1"><span class="Green">Synectics Solution</span> Charity Gaming Marathon</span>
         <span class="donation">
             <img class="justgivingLogo" src="https://www.jg-cdn.com/chrome/3e7a4dc9d866fda15331414a9072da97.svg" alt="">
-            <a data-marker="donate-button" href="https://www.justgiving.com/crowdfunding/synectics-solutions-gaming/donate?pageSection=page > top" class="jg-btn _3iUpP">Donate</a>
+            <a data-marker="donate-button" target="_blank" href="https://www.justgiving.com/crowdfunding/synectics-solutions-gaming/donate?pageSection=page > top" class="jg-btn _3iUpP">Donate</a>
         </span>
     </nav>
 
@@ -30,9 +42,15 @@
         </div>
     </div>
 
-<div class="Main">
-    <div id="twitch-embed"></div>
-</div>
+    <div class="Main">
+        <div id="twitch-embed"></div>
+        <div class="fb-video" hidden
+             data-href="https://www.facebook.com/FacebookDevelopers/posts/10151471074398553"
+             data-width="500"
+             data-allowfullscreen="true"
+             data-autoplay="true"
+             data-show-captions="true"></div>
+    </div>
 
 <div class="progress progress-bar-vertical">
     <p class="targetAmount"></p>
@@ -44,6 +62,6 @@
 
 <footer>
         <span class="text-muted">&copy; 2019 - Synectics Solutions</span>
-    </footer>
+</footer>
 </body>
 </html>
